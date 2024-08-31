@@ -29,7 +29,7 @@ jobs:
         run: npm run build && touch ./out/.nojekyll
 
       - name: Deploy 🚀
-        uses: yashjain128/helloworld/.github/workflows/node.js.yml@v2
+        uses: actions/deploy-pages@v4.0.5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: public # The branch the action should deploy to.
